@@ -1,5 +1,10 @@
-x = 0
-def tiger(*animals):
-    print("The bear ate the " + animals[2])
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
 
-tiger('Bunny', 'Deer', 'Salmon')
+print("\n\nRecursion Example Results")
+tri_recursion(6)
