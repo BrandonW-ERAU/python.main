@@ -1,10 +1,11 @@
-def tri_recursion(k):
-  if(k > 0):
-    result = k + tri_recursion(k - 1)
-    print(result)
-  else:
-    result = 0
-  return result
+import random
+def roll_dice(num_dice):
+  int(num_dice)
+  for y in range(num_dice):
+    dice = random.randint(1, 7)
+    print(dice)
 
-print("\n\nRecursion Example Results")
-tri_recursion(6)
+roll_dice(8)
+
+
+
